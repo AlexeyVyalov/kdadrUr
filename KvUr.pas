@@ -1,11 +1,12 @@
-var a,b,c,d:real;
-begin
- writeln('Введите коэффициенты a,b,c');readln(a,b,c);
- d:=sqr(b)-4*a*c;
- if d>0 then begin
-             writeln('x1=',(-b-sqrt(d))/(2*a):4:2);
-             writeln('x1=',(-b+sqrt(d))/(2*a):4:2)
-             end
-        else if d=0 then writeln('x=',-b/(2*a):4:2)
-                    else writeln('нет корней');
- end.
+print('Vvedite a,b,c')
+a = float(input())
+b = float(input())
+c = float(input())
+d = b**2-4*a*c 
+if d>0:
+    print('x1=',(-b-d*0.5)/(2/a),'x2=',(-b+d*0.5)/(2/a))
+else:
+    if d==0:
+        print('x=',-b/(2*a))
+    else:
+        print('net kornei')
